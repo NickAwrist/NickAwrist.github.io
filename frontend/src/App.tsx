@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
+import ProjectCard from './components/ProjectCard'; // Make sure this is also a .tsx file with types
 import './App.css';
+import { Project } from './types';
 
-function App() {
+// Example projects data
+const projects: Project[] = [
+  {
+    id: 1,
+    title: 'Project 1',
+    description: 'This is a brief description of Project 1.',
+    imageDirectory: 'url-to-image', // Replace with actual image URL
+  },
+  
+];
+
+const App: React.FC = () => {
+  const handleCardClick = (projectId: number) => {
+    console.log(`Project ${projectId} was clicked.`);
+    // Implementation for what happens on click, e.g., navigate to a detailed page
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>My Portfolio</h1>
       </header>
+      <div className="ProjectsContainer">
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            imageDirectory={project.imageDirectory}
+            onCardClick={() => handleCardClick(project.id)}
+          />
+        ))}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
