@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="Header">
-        <h1>Nicholas Aristizabal</h1>
+        <h1>Nicholas Aristizabal TEST</h1>
       </header>
 
       <h2>Social Media</h2>
