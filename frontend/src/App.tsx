@@ -1,28 +1,23 @@
 import React from 'react';
-import ProjectCard from './components/ProjectCard'; // Make sure this is also a .tsx file with types
+import ProjectCard from './components/ProjectCard';
 import './App.css';
 import { Project } from './types';
 
-// Example projects data
 const projects: Project[] = [
   {
     id: 1,
     title: 'Project 1',
     description: 'This is a brief description of Project 1.',
-    imageDirectory: 'url-to-image', // Replace with actual image URL
+    imageDirectory: 'url-to-image', 
   },
   
 ];
 
 const App: React.FC = () => {
-  const handleCardClick = (projectId: number) => {
-    console.log(`Project ${projectId} was clicked.`);
-    // Implementation for what happens on click, e.g., navigate to a detailed page
-  };
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="Header">
         <h1>Nicholas Aristizabal</h1>
       </header>
 
@@ -39,58 +34,99 @@ const App: React.FC = () => {
 
       </div>
 
+      <div className="breakPoint"></div>
+
       <h2>About Me</h2>
-      <div className="AboutMe">
+      <div className="TextBox">
         <p>
-          I student at the University of Central Florida with a passion for creating software projects and solving problems. I have experience with
+          I am a student at the University of Central Florida with a passion for creating software projects and solving problems. I have experience with
           full-stack development, and I am always eager to learn new technologies and frameworks. I am currently
           looking for new opportunities to grow and develop my skills.
         </p>
       </div>
 
+      <div className="breakPoint"></div>
+
+      <h2>Education</h2>
+      <div className="TextBox">
+        <p>
+          University of Central Florida
+          <img src="ucf_icon.png" alt="UCF" style={{width: '30px', height: '30px'}} />
+
+          <br />
+          Bachelor of Science in Computer Science
+          <br />
+          Expected Graduation: May 2023
+          <br />
+          GPA: 3.65
+        </p>
+        <p>
+          Relavant Coursework: Data Structures, Algorithms, Object-Oriented Programming, Software Engineering, Discrete Mathematics, Computer Organization
+        </p>
+      </div>
+
+      <div className="breakPoint"></div>
+
       <div className="Skills">  
 
-        <div>
-          
-          <div className="Skill">
-            <h2 className="SkillHeader">Frameworks</h2>
-            <ul>
-              <li>ReactJS</li>
-              <li>React Native</li>
-              <li>NodeJS</li>
-              <li>DiscordJS</li>
-            </ul>
-          </div>
+        <div className="Skill">
+          <h2 className="SkillHeader">Frameworks</h2>
+          <ul>
+            <li>ReactJS</li>
+            <li>React Native</li>
+            <li>NodeJS</li>
+            <li>DiscordJS</li>
+          </ul>
+        </div>
+      
+
+        <div className="Skill">
+          <h2 className="SkillHeader">Languages</h2>
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>JavaScript/TypeScript</li>
+            <li>Rust</li>
+          </ul>
         </div>
 
-        <div>
-          <div className="Skill">
-            <h2 className="SkillHeader">Languages</h2>
-            <ul>
-              <li>C</li>
-              <li>C++</li>
-              <li>Java</li>
-              <li>JavaScript/TypeScript</li>
-              <li>Rust</li>
-            </ul>
-          </div>
-        </div>
-
-        <div>
-          <div className="Skill">
-            <h2 className="SkillHeader">Tools</h2>
-            <ul>
-              <li>Git</li>
-              <li>VSCode</li>
-              <li>Postman</li>
-              <li>SwaggerHub</li>
-              <li>IntelliJ</li>
-            </ul>
-          </div>
+        <div className="Skill">
+          <h2 className="SkillHeader">Tools</h2>
+          <ul>
+            <li>Git</li>
+            <li>Docker</li>
+            <li>Linux</li>
+            <li>VSCode</li>
+            <li>Postman</li>
+            <li>SwaggerHub</li>
+            <li>IntelliJ</li>
+          </ul>
         </div>
       
       </div>
-      
+
+      <div className="breakPoint"></div>
+
+      <h2>Work Experience</h2>
+      <div className="TextBox">
+        <p>
+          <b>Peer Tutor for Computer Science, Object-Oriented Programming, Organic Chemistry</b>
+          <br />
+          <i>Student Academic Resource Center @ UCF</i>
+          <br />
+          January 2022 - Present
+          <br />
+          <br />
+          <ul>
+            <li>Assisted students with understanding course material</li>
+            <li>Facilitated group study sessions</li>
+            <li>Created study guides and practice problems</li>
+          </ul>
+        </p>
+      </div>
+
+      <div className="breakPoint"></div>
 
       <h2>Projects</h2>
       <div className="ProjectsContainer">
@@ -100,11 +136,23 @@ const App: React.FC = () => {
             title={project.title}
             description={project.description}
             imageDirectory={project.imageDirectory}
-            onCardClick={() => handleCardClick(project.id)}
           />
         ))}
       </div>
+
+      <h2>Contact</h2>
+      <div className="ContactSection">
+        <div className="ContactInfo">
+          <p><strong>Email:</strong> <a href="mailto:nick@example.com">nicholas.aristizabal@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+1 (954)-812">+1 234-567-890</a></p>
+        </div>
+      </div>
+
+
+
+
     </div>
+      
   );
 };
 

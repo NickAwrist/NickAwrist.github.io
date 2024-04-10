@@ -1,4 +1,4 @@
-/* Basic reset */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -20,7 +20,7 @@ body {
 	padding: 0 20px;
 }
 
-.App-header {
+.Header {
 	background: #333;
 	color: #fff;
 	padding: 20px 0;
@@ -66,29 +66,43 @@ p {
 	padding: 10px;
 }
 
-/* Section styling */
-section {
-	margin-bottom: 20px;
-	padding: 20px;
-	background: #fff;
-}
-
 /* Links */
 .Links {
 	display: flex;
 	justify-content: space-around;
 }
 
-/* About Me section */
-.About-me {
+/* Style for the headers (About me, Work experience, */
+h2 {
+	margin-bottom: 30px;
+	color: #eaeaea;
+	font-size: 1.5em; 
 }
 
-/* My Work section */
-.My-work {
+/* Style for the text box */
+.TextBox {
+	background: #3a3a3a; 
+	color: #fff;
+	padding: 20px;
+	margin: 10px 0 30px 0; 
+	border-radius: 5px; 
 }
 
-/* Contact section */
-.Contact {
+/* Images in a text box */
+.TextBox img {
+	margin-right: 10px;
+	vertical-align: middle;
 }
 
-/* Add more specific styles here */
+.TextBox p {
+	margin-bottom: 15px;
+}
+
+.TextBox ul {
+	margin-left: 40px;
+}
+
+.breakPoint {
+	border-bottom: 1px solid #fff;
+	margin: 10px 0;
+}
