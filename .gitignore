@@ -1,3 +1,4 @@
-/backend/node_modules
-/frontend/node_modules
-.DS_store
+.gitignore
+/backend/node_modules/
+/backend
+/frontend
