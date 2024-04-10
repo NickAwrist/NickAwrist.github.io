@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ProjectCard.css';
 import { ProjectCardProps } from '../types';
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageDirectory }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
@@ -17,6 +17,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageDire
         </div>
         <div className="CardBack">
           <p>{description}</p>
+          {link && (
+            <a href={link} target="_blank" rel="noreferrer" style={{color: '#46bef5', textDecoration: 'none'}}>
+              View Project
+            </a>
+          )}
         </div>
       </div>
     </div>

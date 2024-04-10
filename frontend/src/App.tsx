@@ -1,17 +1,8 @@
 import React from 'react';
 import ProjectCard from './components/ProjectCard';
 import './App.css';
-import { Project } from './types';
 
-const projects: Project[] = [
-  {
-    id: 1,
-    title: 'Project 1',
-    description: 'This is a brief description of Project 1.',
-    imageDirectory: 'url-to-image', 
-  },
-  
-];
+import projects from './data/projects.json';
 
 const App: React.FC = () => {
 
@@ -135,16 +126,18 @@ const App: React.FC = () => {
             key={project.id}
             title={project.title}
             description={project.description}
-            imageDirectory={project.imageDirectory}
+            link={project.link}
           />
         ))}
       </div>
+
+      <div className="breakPoint"></div>
 
       <h2>Contact</h2>
       <div className="ContactSection">
         <div className="ContactInfo">
           <p><strong>Email:</strong> <a href="mailto:nick@example.com">nicholas.aristizabal@gmail.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+1 (954)-812">+1 234-567-890</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+19548123727">+1 (954)-812-3727</a></p>
         </div>
       </div>
 

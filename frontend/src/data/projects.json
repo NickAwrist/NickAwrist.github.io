@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Megabytes",
+        "description": "Megabytes is a social media app and website that allows users to publish their own recipes and share them with others. Some notable features are being able to post a recipe online, comment and like other recipes, and generate recipes using AI by inputting a food name. The platform is built with React, React Native, Node.js, Express, and MongoDB. It also uses JWT for authentication and bcrypt for password encryption.",
+        "link": "https://github.com/Fugate-A/MegaBytes.app"
+    },
+    {
+        "id": 2,
+        "title": "BeanBook Contacts",
+        "description": "BeanBook Contacts is a contact management system that allows users to store and manage their contacts. Some notable features are being able to add, edit, and delete contacts. The platform is built with HTML/CSS, JavaScript, PHP, and MySQL.",
+        "link": "https://github.com/Fugate-A/ContactManager"
+    },
+    {
+        "id": 3,
+        "title": "PL/0 Compiler & Virtual Machine", 
+        "description": "PL/0 Compiler is a compiler build in the C programming language for the PL/0 programming language which is an educational programming language used to teach compiler design. A program written in Pl/0 is inputted and is tokenized, parsed, and then translated into machine code. The machine code is then executed by a virtual machine.",
+        "link": "https://github.com/NickAwrist/PL-0_Compiler_VM"
+    },
+    {
+        "id": 4,
+        "title": "Rust Calculator",
+        "description": "Rust Calculator is a simple calculator built with Rust. The calculator can perform basic arithmetic operations such as addition, subtraction, multiplication, division, modulo, and exponents. The calculator follows an infix to postfix conversion algorithm to evaluate the expression.",
+        "link": "https://github.com/NickAwrist/Rust_Calculator"
+    },
+    {
+        "id": 5,
+        "title": "Minecraft Java Edition Plugins",
+        "description": "A collection of Minecraft Java Edition plugins that I have created. Some notable plugins are a Ultra Hardcore, Hardcore, and Advanced Reactions. The plugins are built with Java and the PaperMC API. The plugins are used to enhance the gameplay experience of Minecraft servers.",
+        "link": "https://github.com/NickAwrist/Minecraft_Plugins"
+    },
+    {
+        "id": 6,
+        "title": "Checksum Evaluation",
+        "description": "A 8-, 16-, and 32-bit checksum evaluation program that calculates the checksum of a given file. The program is built with Java and uses bitwise operations to calculate the checksum of a file. The program is used to verify the integrity of a file by comparing the calculated checksum to the expected checksum.",
+        "link": "https://github.com/NickAwrist/Java_CheckSum"
+    },
+    {
+        "id": 7,
+        "title": "Portfolio Website",
+        "description": "My personal portfolio website that showcases my projects, skills, and experience. The website is built with React and TypeScript. The website is responsive and mobile-friendly. The website is hosted on GitHub Pages.",
+        "link": "https://github.com/NickAwrist/Portfolio-Website"
+    }
+]
