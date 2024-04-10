@@ -137,11 +137,10 @@ const App: React.FC = () => {
       <div className="ContactSection">
         <div className="ContactInfo">
           <p><strong>Email:</strong> <a href="mailto:nick@example.com">nicholas.aristizabal@gmail.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+19548123727">+1 (954)-812-3727</a></p>
         </div>
       </div>
 
-
+      <div className="breakPoint"></div>
 
 
     </div>
