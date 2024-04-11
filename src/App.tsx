@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ProjectCard from './components/ProjectCard';
 import './App.css';
 
@@ -6,10 +6,23 @@ import projects from './data/projects.json';
 
 const App: React.FC = () => {
 
+  const [currentTime, setCurrentTime] = useState<Date>(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return function cleanup() {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
     <div className="App">
       <header className="Header">
         <h1>Nicholas Aristizabal</h1>
+        <p>{currentTime.toLocaleString()}</p>
       </header>
 
       <h2>Social Media</h2>
@@ -131,6 +144,21 @@ const App: React.FC = () => {
             link={project.link}
           />
         ))}
+      </div>
+
+      <div className="breakPoint"></div>
+
+      <h2>Resume</h2>
+      <div className="ResumeSection">
+        <object 
+          data="resume.pdf" 
+          type="application/pdf" 
+          width="600" 
+          height="700">
+          <p>Your browser does not support PDFs. 
+            <a href="resume.pdf">Download the resume</a>.
+          </p>
+        </object>
       </div>
 
       <div className="breakPoint"></div>

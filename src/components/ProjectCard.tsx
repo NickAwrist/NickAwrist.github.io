@@ -16,12 +16,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) =
           <h3>{title}</h3>
         </div>
         <div className="CardBack">
-          <p>{description}</p>
-          {link && (
-            <a href={link} target="_blank" rel="noreferrer" style={{color: '#46bef5', textDecoration: 'none'}}>
-              View Project
-            </a>
-          )}
+          <div className="CardBackContent">
+            <p>{description}</p>
+            {link && (
+              <a href={link} target="_blank" rel="noreferrer" style={{color: '#46bef5', textDecoration: 'none'}}>
+                View Project
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>
