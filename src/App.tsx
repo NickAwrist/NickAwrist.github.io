@@ -152,9 +152,8 @@ const App: React.FC = () => {
       <div className="ResumeSection">
         <object 
           data="resume.pdf" 
-          type="application/pdf" 
-          width="600" 
-          height="700">
+          type="application/pdf"
+        >
           <p>Your browser does not support PDFs. 
             <a href="resume.pdf">Download the resume</a>.
           </p>

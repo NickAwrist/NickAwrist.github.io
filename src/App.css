@@ -145,6 +145,19 @@ h2 {
 	margin: 10px 0;
 }
 
+.ResumeSection {
+	margin: 20px 0;
+	text-align: center;
+}
+  
+.ResumeSection object {
+	width: 100%;
+	max-width: 600px;
+	height: 700px; 
+	border: none;
+}
+  
+
 .ContactInfo a {
 	color: #46bef5; 
 }
