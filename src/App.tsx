@@ -16,11 +16,11 @@ const App: React.FC = () => {
       <div className="SocialMedia">
 
         <a href="https://github.com/NickAwrist" target="_blank" rel="noreferrer">
-          <img className="icon_img" src="github_logo.png" alt="GitHub"/>
+          <img className="icon_img" src="github_logo.png" alt="Link to Github"/>
         </a>
 
         <a href="https://www.linkedin.com/in/nicholas-aristizabal-56ba6b235/" target="_blank" rel="noreferrer">
-          <img className="icon_img" src="linkedin_logo.png" alt="Linkedin"/>
+          <img className="icon_img" src="linkedin_logo.png" alt="Link to Linkedin"/>
         </a>
 
       </div>
@@ -42,12 +42,12 @@ const App: React.FC = () => {
       <div className="TextBox">
         <p>
           University of Central Florida
-          <img src="ucf_icon.png" alt="UCF" style={{width: '30px', height: '30px'}} />
+          <img src="ucf_icon.png" alt="UCF Logo" style={{width: '30px', height: '30px'}} />
 
           <br />
           Bachelor of Science in Computer Science
           <br />
-          Expected Graduation: May 2023
+          Expected Graduation: May 2025
           <br />
           GPA: 3.65
         </p>
@@ -109,10 +109,12 @@ const App: React.FC = () => {
           January 2022 - Present
           <br />
           <br />
+          <p>Provided comprehensive academic support to undergraduate students in Computer Science and Organic Chemistry courses through one-on-one and group tutoring sessions. 
+            Contributed to enhancing student understanding and academic performance in historically challenging subjects.</p>
           <ul>
-            <li>Assisted students with understanding course material</li>
-            <li>Facilitated group study sessions</li>
-            <li>Created study guides and practice problems</li>
+            <li>Collaborated with course instructors to develop and prepare session materials, ensuring alignment with course objectives and enhancing student learning outcomes.</li>
+            <li>Facilitated academic discussions and workshops, encouraging active learning, critical thinking, and problem-solving among students.</li>
+            <li>Adapted to various learning environments by conducting in-person and online/hybrid tutoring sessions, addressing diverse student needs and preferences.</li>
           </ul>
         </p>
       </div>
@@ -141,7 +143,6 @@ const App: React.FC = () => {
       </div>
 
       <div className="breakPoint"></div>
-
 
     </div>
       

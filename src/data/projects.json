@@ -19,26 +19,38 @@
     },
     {
         "id": 4,
+        "title": "Hoyolab Automatic Daily Check-In Bot",
+        "description": "The daily check-in bot is a Discord bot built using DiscordJS and NodeJS that automatically checks in for the daily rewards in Genshin Impact and Honkai Starrail. The bot uses the the same API calls that hoyolab.com uses to automate the process of checking in on the Hoyolab website.",
+        "link": "https://github.com/NickAwrist/Dailycheckin_Bot"
+    },
+    {
+        "id": 5,
         "title": "Rust Calculator",
         "description": "Rust Calculator is a simple calculator built with Rust. The calculator can perform basic arithmetic operations such as addition, subtraction, multiplication, division, modulo, and exponents. The calculator follows an infix to postfix conversion algorithm to evaluate the expression.",
         "link": "https://github.com/NickAwrist/Rust_Calculator"
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Minecraft Java Edition Plugins",
         "description": "A collection of Minecraft Java Edition plugins that I have created. Some notable plugins are a Ultra Hardcore, Hardcore, and Advanced Reactions. The plugins are built with Java and the PaperMC API. The plugins are used to enhance the gameplay experience of Minecraft servers.",
         "link": "https://github.com/NickAwrist/Minecraft_Plugins"
     },
     {
-        "id": 6,
+        "id": 7,
         "title": "Checksum Evaluation",
         "description": "A 8-, 16-, and 32-bit checksum evaluation program that calculates the checksum of a given file. The program is built with Java and uses bitwise operations to calculate the checksum of a file. The program is used to verify the integrity of a file by comparing the calculated checksum to the expected checksum.",
         "link": "https://github.com/NickAwrist/Java_CheckSum"
     },
     {
-        "id": 7,
+        "id": 8,
         "title": "Portfolio Website",
         "description": "My personal portfolio website that showcases my projects, skills, and experience. The website is built with React and TypeScript. The website is responsive and mobile-friendly. The website is hosted on GitHub Pages.",
         "link": "https://github.com/NickAwrist/NickAwrist.github.io"
+    },
+    {
+        "id": 9,
+        "title": "Technical Writing Materials",
+        "description": "A collection of technical writing materials that I have created. Some notable materials are my resume, cover letter, a mock interview, instructions on how to use a program I created, and a research proposal on the topic of Hackathons at UCF.",
+        "link": "https://drive.google.com/drive/folders/1eRgJFzaey1zXZprNczHPGBtfFott_rtb?usp=sharing"
     }
 ]
