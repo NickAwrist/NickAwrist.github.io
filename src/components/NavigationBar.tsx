@@ -13,6 +13,9 @@ const NavigationBar: React.FC = () => {
     return (
         <nav className="NavigationBar">
         <NavLink to="/" style={({ isActive }) => isActive ? activeStyle : undefined}>
+            Home
+        </NavLink>
+        <NavLink to="/about-me" style={({ isActive }) => isActive ? activeStyle : undefined}>
             About Me
         </NavLink>
         <NavLink to="/experience" style={({ isActive }) => isActive ? activeStyle : undefined}>

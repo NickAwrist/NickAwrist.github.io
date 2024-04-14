@@ -43,6 +43,9 @@ const ExperiencePage: React.FC = () => {
                 />
                 ))}
             </div>
+
+            <div className="breakPoint"></div>
+
         </div>
     )
 

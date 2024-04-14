@@ -8,18 +8,19 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 
 import HomePage from './pages/HomePage';
+import AboutMePage from './pages/AboutMePage';
 import ExperiencePage from './pages/ExperiencePage';
 import ResumePage from './pages/ResumePage';
 
 const App: React.FC = () => {
-  
-  const [accentColor, setAccentColor] = useState<string>(getRandomColor());
+
+  const [accentColor] = useState<string>(getRandomColor());
 
   function getRandomColor() {
-    const letters: string = '0123456789ABCDEF';
+    const letters: string = '6789ABCDEF';
     let color: string = '#';
     for(let i=0; i<6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+      color += letters[Math.floor(Math.random() * letters.length)];
     }
     return color;
   }
@@ -53,6 +54,7 @@ const AppContent: React.FC = () => {
       >
         <Routes location={location}>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about-me" element={<AboutMePage />} />
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/resume" element={<ResumePage />} />
         </Routes>

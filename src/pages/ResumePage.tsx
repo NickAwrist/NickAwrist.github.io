@@ -16,6 +16,9 @@ const ResumePage: React.FC = () => {
                 </p>
                 </object>
             </div>
+
+            <div className="breakPoint"></div>
+
         </div>
     );
 };

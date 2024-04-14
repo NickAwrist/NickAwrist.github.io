@@ -79,14 +79,6 @@ p {
 	font-size: large;
 }
 
-.Skill ul {
-	background: #3a3a3a; 
-	color: #fff;
-	padding: 5px;
-	margin: 10px 0 30px 0; 
-	border-radius: 5px; 
-}
-
 /* Links */
 .Links {
 	display: flex;
