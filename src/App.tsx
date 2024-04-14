@@ -53,8 +53,8 @@ const AppContent: React.FC = () => {
         classNames="fade"
       >
         <Routes location={location}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about-me" element={<AboutMePage />} />
+          <Route path="/" element={<AboutMePage />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/resume" element={<ResumePage />} />
         </Routes>
