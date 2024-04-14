@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ProjectCard.css';
+import './componentStyles.css';
 import { ProjectCardProps } from '../types';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, link }) => {
