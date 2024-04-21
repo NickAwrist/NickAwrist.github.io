@@ -10,7 +10,7 @@ import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import AboutMePage from './pages/AboutMePage';
 import ExperiencePage from './pages/ExperiencePage';
-import ResumePage from './pages/ResumePage';
+//import ResumePage from './pages/ResumePage';
 
 import InstructionsPage from './pages/tempPages/InstructionsPage';
 import JobMaterialsPage from './pages/tempPages/JobMaterialsPage';
