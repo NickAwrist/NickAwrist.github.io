@@ -1,18 +1,19 @@
 import React from 'react';
 
-import '../App.css';
+import '../../App.css';
 
-const ResumePage: React.FC = () => {
-    return (
-        <div>
-            <h2>Resume</h2>
+const InstructionsPage: React.FC = () => {
+
+    return(
+       <div>
+            <h2>Hoyolab Bot Setup Instructions</h2>
             <div className="pdf">
                 <object 
-                data="resume.pdf" 
+                data="temp/Instructions.pdf" 
                 type="application/pdf"
                 >
                 <p>Your browser does not support PDFs. 
-                    <a href="resume.pdf">Download the resume</a>.
+                    <a href="temp/Instructions.pdf">Download the Instructions</a>.
                 </p>
                 </object>
             </div>
@@ -20,7 +21,8 @@ const ResumePage: React.FC = () => {
             <div className="breakPoint"></div>
 
         </div>
-    );
+    )
+
 };
 
-export default ResumePage;
+export default InstructionsPage;

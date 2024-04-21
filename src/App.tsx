@@ -12,6 +12,10 @@ import AboutMePage from './pages/AboutMePage';
 import ExperiencePage from './pages/ExperiencePage';
 import ResumePage from './pages/ResumePage';
 
+import InstructionsPage from './pages/tempPages/InstructionsPage';
+import JobMaterialsPage from './pages/tempPages/JobMaterialsPage';
+import ProposalPage from './pages/tempPages/ProposalPage';
+
 const App: React.FC = () => {
 
   const [accentColor] = useState<string>(getRandomColor());
@@ -56,7 +60,10 @@ const AppContent: React.FC = () => {
           <Route path="/" element={<AboutMePage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/experience" element={<ExperiencePage />} />
-          <Route path="/resume" element={<ResumePage />} />
+          <Route path="/instructions" element={<InstructionsPage />} />
+          <Route path="/job-materials" element={<JobMaterialsPage />} />
+          <Route path="/proposal" element={<ProposalPage />} />
+          {/*<Route path="/resume" element={<ResumePage />} />*/}
         </Routes>
       </CSSTransition>
     </TransitionGroup>

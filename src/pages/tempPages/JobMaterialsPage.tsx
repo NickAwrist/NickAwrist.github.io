@@ -1,18 +1,19 @@
 import React from 'react';
 
-import '../App.css';
+import '../../App.css';
 
-const ResumePage: React.FC = () => {
-    return (
+const JobMaterialsPage: React.FC = () => {
+
+    return(
         <div>
-            <h2>Resume</h2>
+            <h2>Job Materials</h2>
             <div className="pdf">
                 <object 
-                data="resume.pdf" 
+                data="temp/Job_Materials.pdf" 
                 type="application/pdf"
                 >
                 <p>Your browser does not support PDFs. 
-                    <a href="resume.pdf">Download the resume</a>.
+                    <a href="temp/Job_Materials.pdf">Download the Job Materials</a>.
                 </p>
                 </object>
             </div>
@@ -20,7 +21,8 @@ const ResumePage: React.FC = () => {
             <div className="breakPoint"></div>
 
         </div>
-    );
+    )
+
 };
 
-export default ResumePage;
+export default JobMaterialsPage;
