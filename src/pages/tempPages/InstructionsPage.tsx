@@ -33,7 +33,7 @@ const InstructionsPage: React.FC = () => {
                 type="application/pdf"
                 >
                 <p>Your browser does not support PDFs. 
-                    <a href="temp/Instructions.pdf">Download the Instructions</a>.
+                    <a href="temp/Instructions.pdf"> Download the Instructions</a>.
                 </p>
                 </object>
             </div>

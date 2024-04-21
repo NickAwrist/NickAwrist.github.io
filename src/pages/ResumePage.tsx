@@ -12,7 +12,7 @@ const ResumePage: React.FC = () => {
                 type="application/pdf"
                 >
                 <p>Your browser does not support PDFs. 
-                    <a href="resume.pdf">Download the resume</a>.
+                    <a href="resume.pdf"> Download the resume</a>.
                 </p>
                 </object>
             </div>

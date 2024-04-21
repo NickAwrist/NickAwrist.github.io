@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import './App.css';
@@ -57,8 +57,8 @@ const AppContent: React.FC = () => {
         classNames="fade"
       >
         <Routes location={location}>
-          <Route path="/" element={<AboutMePage />} />
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about-me" element={<AboutMePage />} />
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/instructions" element={<InstructionsPage />} />
           <Route path="/job-materials" element={<JobMaterialsPage />} />

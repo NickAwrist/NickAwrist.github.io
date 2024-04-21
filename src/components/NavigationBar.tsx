@@ -12,10 +12,10 @@ const NavigationBar: React.FC = () => {
 
     return (
         <nav className="NavigationBar">
-        <NavLink to="/home" style={({ isActive }) => isActive ? activeStyle : undefined}>
+        <NavLink to="/" style={({ isActive }) => isActive ? activeStyle : undefined}>
             Home
         </NavLink>
-        <NavLink to="/" style={({ isActive }) => isActive ? activeStyle : undefined}>
+        <NavLink to="/about-me" style={({ isActive }) => isActive ? activeStyle : undefined}>
             About Me
         </NavLink>
         <NavLink to="/experience" style={({ isActive }) => isActive ? activeStyle : undefined}>

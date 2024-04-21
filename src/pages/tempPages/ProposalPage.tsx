@@ -31,11 +31,11 @@ const ProposalPage: React.FC = () => {
 
             <div className="pdf">
                 <object 
-                data="temp/proposal.pdf" 
+                data="temp/Proposal.pdf" 
                 type="application/pdf"
                 >
                 <p>Your browser does not support PDFs. 
-                    <a href="temp/Proposal.pdf">Download the proposal</a>.
+                    <a href="temp/Proposal.pdf"> Download the proposal</a>.
                 </p>
                 </object>
             </div>

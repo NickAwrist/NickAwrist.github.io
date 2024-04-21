@@ -33,7 +33,7 @@ const JobMaterialsPage: React.FC = () => {
                 type="application/pdf"
                 >
                 <p>Your browser does not support PDFs. 
-                    <a href="temp/Job_Materials.pdf">Download the Job Materials</a>.
+                    <a href="temp/Job_Materials.pdf"> Download the Job Materials</a>.
                 </p>
                 </object>
             </div>
