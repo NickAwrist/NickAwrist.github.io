@@ -46,11 +46,5 @@
         "title": "Portfolio Website",
         "description": "My personal portfolio website that showcases my projects, skills, and experience. The website is built with React and TypeScript. The website is responsive and mobile-friendly. The website is hosted on GitHub Pages.",
         "link": "https://github.com/NickAwrist/NickAwrist.github.io"
-    },
-    {
-        "id": 9,
-        "title": "Technical Writing Materials",
-        "description": "A collection of technical writing materials that I have created. Some notable materials are my resume, cover letter, a mock interview, instructions on how to use a program I created, and a research proposal on the topic of Hackathons at UCF.",
-        "link": "https://drive.google.com/drive/folders/1eRgJFzaey1zXZprNczHPGBtfFott_rtb?usp=sharing"
     }
 ]
