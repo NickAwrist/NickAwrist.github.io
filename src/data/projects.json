@@ -1,5 +1,23 @@
 [
     {
+        "id": 0,
+        "title": "Surgical Tool Tracking System using Artificial Intelligence",
+        "description": "The Surgical Tool Tracking System is a computer vision project that uses AI to track surgical tools in real-time. This is used to identify which tools are being used too often and will help reduce waste and costs. The system uses a camera to capture the surgical tools and then uses a custom-trained YOLOv11 model to detect and classify the tools. The system then tracks the tools and displays the tracking information on the screen as well as the bounding boxes of each tool. The system is built with Java, OpenCV, and ONNX.",
+        "link": "https://github.com/tkjonesy/Surgical-Tool-Tracking-CV"
+    },
+    {
+        "id": 90,
+        "title": "Course-Connect",
+        "description": "Course Connect is a web application that allows students to view courses offered by UCF and rate them. The application also allows students to view the comments of other students and see the average rating of a course. The application is built with React, Node.js, Express, and MongoDB.",
+        "link": ""
+    },
+    {
+        "id": 91,
+        "title": "Lemon Drop",
+        "description": "A 36-hour hackathon project designed to modernize dashcam technology. Lemon Drop connects to dashcams via a Raspberry Pi, automatically downloads footage when in WiFi range, and hosts a local web server for managing multiple dashcams and their recordings. Built with Python's Flask and a custom network setup, this solution simplifies dashcam management.",
+        "link": "https://github.com/NickAwrist/Lemon_Drop"
+    },
+    {
         "id": 1,
         "title": "Megabytes",
         "description": "Megabytes is a social media app and website that allows users to publish their own recipes and share them with others. Some notable features are being able to post a recipe online, comment and like other recipes, and generate recipes using AI by inputting a food name. The platform is built with React, React Native, Node.js, Express, and MongoDB. It also uses JWT for authentication and bcrypt for password encryption.",
