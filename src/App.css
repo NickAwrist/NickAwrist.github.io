@@ -1,9 +1,18 @@
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family:Verdana;
+	font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+}
+
+:root {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-primary: #f0f0f0;
+    --text-secondary: #b0b0b0;
+    --border-radius: 12px;
+    --transition-speed: 0.3s;
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -13,30 +22,29 @@
 *::-webkit-scrollbar-thumb {
     background-color: var(--accent-color); 
 	border-radius: 10px;
-    border: 2px solid #2a2a2a; 
+    border: 2px solid var(--bg-secondary); 
 }
 
 *::-webkit-scrollbar-track {
-    background: #2a2a2a; 
+    background: var(--bg-secondary); 
 }
 
 /* Style scrollbars */
 body::-webkit-scrollbar {
-    width: 20px;
+    width: 12px;
 }
 
-
 body {
-	font-family: 'Arial', sans-serif;
-	line-height: 1.6;
-	color: #f4f4f4;
-	background-color: #333;
-	padding: 20px;
-	
+	font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+	line-height: 1.7;
+	color: var(--text-primary);
+	background-color: var(--bg-primary);
+	padding: 30px 20px;
+	transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
 .App {
-	max-width: 960px;
+	max-width: 1100px;
 	margin: auto;
 	overflow: hidden;
 	padding: 0 20px;
@@ -44,107 +52,160 @@ body {
 
 h1, h2 {
 	margin-bottom: 20px;
+	font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
 }
 
 p {
-	margin-bottom: 10px;
+	margin-bottom: 16px;
+	font-size: 1rem;
+    line-height: 1.7;
 }
 
-.SocialMedia{
+.SocialMedia {
 	display: flex;
+	gap: 15px;
+    margin: 20px 0;
 }
 
 .icon_img {
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	margin: 5px;
+    transition: transform 0.3s ease;
+    filter: grayscale(30%);
 }
 
-.Skills{
+.icon_img:hover {
+    transform: translateY(-5px);
+    filter: grayscale(0%);
+}
+
+.Skills {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
 }
 
-.SkillHeader{
-	border-bottom: #444;
-	border-width: 5px;
-	border-bottom-style: solid;
+.SkillHeader {
+	border-bottom: 3px solid var(--accent-color);
 	text-align: center;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 .Skill {
-	margin: 10px;
-	padding: 10px;
-	font-size: large;
+	margin: 5px;
+	padding: 8px 16px;
+	font-size: 0.9rem;
+    background-color: var(--bg-secondary);
+    border-radius: 50px;
+    transition: all var(--transition-speed);
+    border: 1px solid transparent;
+}
+
+.Skill:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
 }
 
 /* Links */
 .Links {
 	display: flex;
 	justify-content: space-around;
-}
-
-/* Style for the headers (About me, Work experience, */
-h2 {
-	margin-bottom: 30px;
-	color: #eaeaea;
-	font-size: 1.5em; 
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 /* Style for the text box */
 .TextBox {
-	background: #3a3a3a; 
-	color: #fff;
-	padding: 20px;
-	margin: 10px 0 30px 0; 
-	border-radius: 5px; 
+	background: var(--bg-secondary);
+	color: var(--text-primary);
+	padding: 25px;
+	margin: 15px 0 30px 0;
+	border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform var(--transition-speed);
+}
+
+.TextBox:hover {
+    transform: translateY(-3px);
 }
 
 /* Images in a text box */
 .TextBox img {
-	margin-right: 10px;
+	margin-right: 15px;
 	vertical-align: middle;
+    border-radius: 5px;
 }
 
 .TextBox p {
 	margin-bottom: 15px;
-	font-size: medium;
+	font-size: 1rem;
 }
 
 .TextBox ul {
-	margin-left: 40px;
+	margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.TextBox li {
+    margin-bottom: 8px;
 }
 
 .breakPoint {
-	border-bottom: 1px solid #fff;
-	margin: 10px 0;
-	border-color: var(--accent-color);
+	border-bottom: 2px solid var(--accent-color);
+	margin: 30px 0;
+    opacity: 0.6;
 }
 
 .pdf {
-	margin: 20px 0;
+	margin: 25px 0;
 	text-align: center;
 }
   
 .pdf object {
 	width: 100%;
-	max-width: 600px;
+	max-width: 800px;
 	height: 700px; 
 	border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
   
-
 .ContactInfo a {
-	color: #46bef5; 
+	color: var(--accent-color);
+    text-decoration: none;
+    transition: all var(--transition-speed);
 }
   
 .ContactInfo a:hover {
-	font-weight: bold;
+	text-decoration: underline;
+    opacity: 0.9;
+}
+
+.ContactSection {
+    background: var(--bg-secondary);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
   
-
-/* 	Fade Transition */
+/* Fade Transition */
 .fade-enter {
 	opacity: 0;
 	z-index: 1;
@@ -162,4 +223,50 @@ h2 {
 .fade-exit.fade-exit-active {
 	opacity: 0;
 	transition: opacity 300ms ease-in;
+}
+
+/* New Skill Styling */
+.SkillCard {
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform var(--transition-speed);
+}
+
+.SkillCard:hover {
+    transform: translateY(-5px);
+}
+
+.SkillCard .SkillHeader {
+    color: var(--accent-color);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.SkillTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.SkillTag {
+    background: var(--bg-primary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    transition: all var(--transition-speed);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.SkillTag:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-color);
 }

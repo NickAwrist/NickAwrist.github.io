@@ -1,15 +1,22 @@
 /* Component: Header */
 .Header {
 	position: relative;
-    background: #333;
-	color: #fff;
-	padding: 20px 0;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
+    background: var(--bg-primary);
+	color: var(--text-primary);
+	padding: 30px 0 20px;
+	margin-bottom: 20px;
 	text-align: center;
-	border-bottom: 5px solid var(--accent-color);
+	border-bottom: 3px solid var(--accent-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
+.Header h1 {
+    background: linear-gradient(to right, var(--text-primary), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
 
 .Header p {
 	position: absolute;
@@ -18,54 +25,81 @@
 }
 
 /* Component: NavigationBar */
-
 .NavigationBar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background: #3a3a3a;
-    color: #fff;
-    padding: 10px 20px;
+    flex-wrap: wrap;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 12px 20px;
     margin-bottom: 30px;
-}
-
-.NavigationBar a:hover {
-    background-color: #2a2a2a;
+    border-radius: var(--border-radius);
+    gap: 10px;
+    box-shadow: var(--box-shadow);
 }
 
 .NavigationBar a {
-    color: #fff;
+    color: var(--text-primary);
     text-decoration: none;
-    padding: 10px 20px; 
-    border-radius: 15px; 
-    transition: background-color 0.3s; 
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all var(--transition-speed);
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    position: relative;
+}
+
+.NavigationBar a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+}
+
+.NavigationBar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--accent-color);
+    transition: all var(--transition-speed);
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.NavigationBar a:hover::after {
+    width: 70%;
+    opacity: 1;
 }
 
 /* Component: ProjectCard */
 .ProjectsContainer {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 20px;
-	padding: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 25px;
+	padding: 20px 0;
 }
 
 .ProjectCard {
     position: relative;
     width: 100%;
-    height: 300px; 
-    perspective: 1000px; 
-    
+    height: 320px;
+    perspective: 1000px;
 }
 
 .CardInner {
-    background: #3a3a3a; 
+    background: var(--bg-secondary);
     position: absolute;
     width: 100%;
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .CardInner.is-flipped {
@@ -73,38 +107,95 @@
 }
 
 .CardFront, .CardBack {
-    background: #3a3a3a; 
+    background: var(--bg-secondary);
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     align-items: center;
     justify-content: center;
-    border: 1px solid #ccc;
-    border-radius: 15px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .CardBack:hover, .CardFront:hover {
-    background: #444;
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .CardFront {
     display: flex;
     padding: 25px;
+    flex-direction: column;
+}
+
+.CardFront h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--accent-color);
 }
 
 .CardBack {
     transform: rotateY(180deg);
-    padding: 15px;
+    padding: 20px;
 }
 
 .CardBackContent {
     overflow: auto;
     height: 100%;
     width: 100%;
-    padding: 1px;
+    padding: 5px;
 }
 
 .CardBackContent::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
+}
+
+.CardBackContent h4 {
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.CardBackContent p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Footer Component */
+.Footer {
+    margin-top: 50px;
+}
+
+.SocialLink {
+    color: var(--text-secondary);
+    transition: all var(--transition-speed);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    box-shadow: var(--box-shadow);
+}
+
+.SocialLink:hover {
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .NavigationBar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .NavigationBar a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+    }
+    
+    .ProjectsContainer {
+        grid-template-columns: 1fr;
+    }
 }

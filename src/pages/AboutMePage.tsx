@@ -2,21 +2,19 @@ import React from 'react';
 
 import '../App.css';
 
-const HomePage: React.FC = () => {
+const AboutMePage: React.FC = () => {
 
     return(
         <div>
             <h2>Social Media</h2>
             <div className="SocialMedia">
-
                 <a href="https://github.com/NickAwrist" target="_blank" rel="noreferrer">
-                <img className="icon_img" src="github_logo.png" alt="Link to Github"/>
+                    <img className="icon_img" src="github_logo.png" alt="Link to Github"/>
                 </a>
 
                 <a href="https://www.linkedin.com/in/nicholas-aristizabal-56ba6b235/" target="_blank" rel="noreferrer">
-                <img className="icon_img" src="linkedin_logo.png" alt="Link to Linkedin"/>
+                    <img className="icon_img" src="linkedin_logo.png" alt="Link to Linkedin"/>
                 </a>
-
             </div>
 
             <div className="breakPoint"></div>
@@ -35,19 +33,15 @@ const HomePage: React.FC = () => {
 
             <h2>Education</h2>
             <div className="TextBox">
+                <div style={{display: 'flex', alignItems: 'center', marginBottom: '15px'}}>
+                    <img src="ucf_icon.png" alt="UCF Logo" style={{width: '40px', height: '40px', marginRight: '15px'}} />
+                    <h3 style={{margin: 0, color: 'var(--accent-color)'}}>University of Central Florida</h3>
+                </div>
+                <p style={{marginBottom: '5px'}}><strong>Bachelor of Science in Computer Science</strong></p>
+                <p style={{marginBottom: '5px'}}>Expected Graduation: May 2025</p>
+                <p style={{marginBottom: '15px'}}>GPA: 3.65</p>
                 <p>
-                University of Central Florida
-                <img src="ucf_icon.png" alt="UCF Logo" style={{width: '30px', height: '30px'}} />
-
-                <br />
-                Bachelor of Science in Computer Science
-                <br />
-                Expected Graduation: May 2025
-                <br />
-                GPA: 3.65
-                </p>
-                <p>
-                Relavant Coursework: Data Structures, Algorithms, Object-Oriented Programming, Software Engineering, Discrete Mathematics, Computer Organization
+                <strong>Relevant Coursework:</strong> Data Structures, Algorithms, Object-Oriented Programming, Software Engineering, Discrete Mathematics, Computer Organization
                 </p>
             </div>
 
@@ -55,63 +49,55 @@ const HomePage: React.FC = () => {
 
             <h2>Technical Skills</h2> 
             <div className="Skills"> 
-
-                <div className="Skill">
-                    <h2 className="SkillHeader">Frameworks</h2>
-                    <ul>
-                        <li>ReactJS</li>
-                        <li>React Native</li>
-                        <li>NodeJS</li>
-                        <li>DiscordJS</li>
-                    </ul>
+                <div className="SkillCard">
+                    <h3 className="SkillHeader">Frameworks</h3>
+                    <div className="SkillTags">
+                        <span className="SkillTag">ReactJS</span>
+                        <span className="SkillTag">React Native</span>
+                        <span className="SkillTag">NodeJS</span>
+                        <span className="SkillTag">DiscordJS</span>
+                    </div>
                 </div>
             
-
-                <div className="Skill">
-                    <h2 className="SkillHeader">Languages</h2>
-                    <ul>
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Java</li>
-                        <li>JavaScript/TypeScript</li>
-                        <li>Rust</li>
-                    </ul>
+                <div className="SkillCard">
+                    <h3 className="SkillHeader">Languages</h3>
+                    <div className="SkillTags">
+                        <span className="SkillTag">C</span>
+                        <span className="SkillTag">C++</span>
+                        <span className="SkillTag">Java</span>
+                        <span className="SkillTag">JavaScript/TypeScript</span>
+                        <span className="SkillTag">Rust</span>
+                    </div>
                 </div>
 
-                <div className="Skill">
-                    <h2 className="SkillHeader">Tools</h2>
-                    <ul>
-                        <li>Git</li>
-                        <li>Docker</li>
-                        <li>Linux</li>
-                        <li>VSCode</li>
-                        <li>Postman</li>
-                        <li>SwaggerHub</li>
-                        <li>IntelliJ</li>
-                    </ul>
+                <div className="SkillCard">
+                    <h3 className="SkillHeader">Tools</h3>
+                    <div className="SkillTags">
+                        <span className="SkillTag">Git</span>
+                        <span className="SkillTag">Docker</span>
+                        <span className="SkillTag">Linux</span>
+                        <span className="SkillTag">VSCode</span>
+                        <span className="SkillTag">Postman</span>
+                        <span className="SkillTag">SwaggerHub</span>
+                        <span className="SkillTag">IntelliJ</span>
+                    </div>
                 </div>
 
-                <div className="Skill">
-                    <h2 className="SkillHeader">Skills</h2>
-                    <ul>
-                        <li>Team-Oriented</li>
-                        <li>Fast Learner</li>
-                        <li>Critical Thinking</li>
-                        <li>Problem-Solving</li>
-                        <li>Adaptability</li>
-                    </ul>
+                <div className="SkillCard">
+                    <h3 className="SkillHeader">Skills</h3>
+                    <div className="SkillTags">
+                        <span className="SkillTag">Team-Oriented</span>
+                        <span className="SkillTag">Fast Learner</span>
+                        <span className="SkillTag">Critical Thinking</span>
+                        <span className="SkillTag">Problem-Solving</span>
+                        <span className="SkillTag">Adaptability</span>
+                    </div>
                 </div>
-            
             </div>
 
             <div className="breakPoint"></div>
-
-            
-
         </div>
-        
     )
-
 }
 
-export default HomePage;
+export default AboutMePage;

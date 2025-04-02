@@ -12,6 +12,17 @@ import AboutMePage from './pages/AboutMePage';
 import ExperiencePage from './pages/ExperiencePage';
 import ResumePage from './pages/ResumePage';
 
+// ScrollToTop component to scroll back to top on route change
+const ScrollToTop: React.FC = () => {
+  const { pathname } = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
+  return null;
+}
+
 const App: React.FC = () => {
 
   const [accentColor] = useState<string>(getRandomColor());
@@ -34,6 +45,7 @@ const App: React.FC = () => {
     <Router>
       <div className="App">
         <Header accentColor={accentColor} />
+        <ScrollToTop />
         <AppContent />
         <Footer />
       </div>
