@@ -11,6 +11,44 @@ const ExperiencePage: React.FC = () => {
     return(
         <div>
             <h2>Work Experience</h2>
+            
+
+            <div className="TextBox">
+                <div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
+                    <div>
+                        <p>
+                            <b>Software Engineer @ Google</b><br/>
+                            <i>
+                                <a
+                                    href="https://www.google.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{color: "white"}}
+                                >
+                                    Google
+                                </a>
+                            </i><br/>
+                            August 2025 - Present
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/google_logo.png" alt="Google Logo" width="275" height="100"/>
+                    </div>
+                </div>
+                <p>
+                    Worked on and developed software for Google Pay's Platform Payment Risk team. I focused on
+                    developing and maintaining the payment risk platform, which is used to detect and prevent fraud
+                    and other types of payment risk and identity theft.
+                </p>
+                <ul>
+                    <li>
+                        Mitigated payment fraud by developing and maintaining a fraud detection system that uses machine learning and data analysis to identify and prevent fraudulent transactions.
+                    </li>
+                    <li>
+                        Developed on risk features for Google Pay to ensure user identity and payment security.
+                    </li>
+                </ul>
+            </div>
 
             <div className="TextBox">
                 <div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
@@ -66,7 +104,7 @@ const ExperiencePage: React.FC = () => {
                     <br/>
                     <i>Student Academic Resource Center @ UCF</i>
                     <br/>
-                    January 2022 - Present
+                    January 2022 - May 2025
                     <br/>
                     <br/>
                     <p>Provided comprehensive academic support to undergraduate students in Computer Science and Organic

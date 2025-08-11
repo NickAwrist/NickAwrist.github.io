@@ -112,10 +112,13 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     align-items: center;
     justify-content: center;
     border-radius: var(--border-radius);
     overflow: hidden;
+    z-index: 2;
 }
 
 .CardBack:hover, .CardFront:hover {
@@ -126,6 +129,20 @@
     display: flex;
     padding: 25px;
     flex-direction: column;
+    z-index: 3;
+}
+
+/* Ensure front face is visible when not flipped */
+.CardInner:not(.is-flipped) .CardFront {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out 0.4s, visibility 0s ease-in-out 0.4s;
+}
+
+.CardInner:not(.is-flipped) .CardBack {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out, visibility 0s ease-in-out 0.1s;
 }
 
 .CardFront h3 {
@@ -137,6 +154,20 @@
 .CardBack {
     transform: rotateY(180deg);
     padding: 20px;
+    z-index: 3;
+}
+
+/* Ensure back face is visible when flipped */
+.CardInner.is-flipped .CardBack {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out 0.4s, visibility 0s ease-in-out 0.4s;
+}
+
+.CardInner.is-flipped .CardFront {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out, visibility 0s ease-in-out 0.1s;
 }
 
 .CardBackContent {

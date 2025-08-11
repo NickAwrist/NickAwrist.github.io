@@ -22,10 +22,14 @@ const AboutMePage: React.FC = () => {
             <h2>About Me</h2>
             <div className="TextBox">
                 <p>
-                I am a student at the University of Central Florida with a passion for creating software projects and solving problems. I have experience with
-                full-stack development and I am always eager to learn new technologies and frameworks. I currently am
-                a tutor at the Student Academic Resource Center @ UCF and a Software Engineer Intern at Ultimate Kronos Group (UKG) for their Summer 2024 internship program. 
-                I am looking for future opportunities in Software Development to grow and develop my skills.
+                    I am a full-time Software Engineer at Google, working on the Platform Payment Risk team. I am a graduate of the University of Central Florida with a Bachelor of Science in Computer Science.
+                    I have a passion for creating software projects and solving complex problems, with experience in full-stack development and a strong foundation in Java.
+                    I am always eager to learn new technologies and frameworks to expand my technical expertise.
+                </p>
+                <p>
+                    Prior to joining Google, I gained valuable experience as a Software Engineer Intern at Ultimate Kronos Group (UKG), where I worked on the Identity and Access Management (IAM) team.
+                    During my time at UCF, I also served as a tutor at the Student Academic Resource Center, helping fellow students with computer science concepts.
+                    These experiences have shaped my collaborative approach to software development and my commitment to continuous learning and growth.
                 </p>
             </div>
 
@@ -38,10 +42,10 @@ const AboutMePage: React.FC = () => {
                     <h3 style={{margin: 0, color: 'var(--accent-color)'}}>University of Central Florida</h3>
                 </div>
                 <p style={{marginBottom: '5px'}}><strong>Bachelor of Science in Computer Science</strong></p>
-                <p style={{marginBottom: '5px'}}>Expected Graduation: May 2025</p>
+                <p style={{marginBottom: '5px'}}>Graduation: May 2025</p>
                 <p style={{marginBottom: '15px'}}>GPA: 3.65</p>
                 <p>
-                <strong>Relevant Coursework:</strong> Data Structures, Algorithms, Object-Oriented Programming, Software Engineering, Discrete Mathematics, Computer Organization
+                <strong>Relevant Coursework:</strong> Data Structures, Algorithms, Object-Oriented Programming, Software Engineering, Discrete Mathematics, Computer Logic & Organization
                 </p>
             </div>
 
@@ -52,6 +56,7 @@ const AboutMePage: React.FC = () => {
                 <div className="SkillCard">
                     <h3 className="SkillHeader">Frameworks</h3>
                     <div className="SkillTags">
+                        <span className="SkillTag">Springboot</span>
                         <span className="SkillTag">ReactJS</span>
                         <span className="SkillTag">React Native</span>
                         <span className="SkillTag">NodeJS</span>
@@ -66,7 +71,7 @@ const AboutMePage: React.FC = () => {
                         <span className="SkillTag">C++</span>
                         <span className="SkillTag">Java</span>
                         <span className="SkillTag">JavaScript/TypeScript</span>
-                        <span className="SkillTag">Rust</span>
+                        <span className="SkillTag">GoLang</span>
                     </div>
                 </div>
 
@@ -74,12 +79,15 @@ const AboutMePage: React.FC = () => {
                     <h3 className="SkillHeader">Tools</h3>
                     <div className="SkillTags">
                         <span className="SkillTag">Git</span>
+                        <span className="SkillTag">Mercurial</span>
+                        <span className="SkillTag">gRPC</span>
                         <span className="SkillTag">Docker</span>
                         <span className="SkillTag">Linux</span>
-                        <span className="SkillTag">VSCode</span>
                         <span className="SkillTag">Postman</span>
                         <span className="SkillTag">SwaggerHub</span>
                         <span className="SkillTag">IntelliJ</span>
+                        <span className="SkillTag">VSCode</span>
+
                     </div>
                 </div>
 

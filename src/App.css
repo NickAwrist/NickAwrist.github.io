@@ -184,6 +184,14 @@ p {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
+
+.resume-last-updated {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    opacity: 0.8;
+}
   
 .ContactInfo a {
 	color: var(--accent-color);
